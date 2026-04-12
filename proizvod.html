@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Detalj proizvoda - GOAT dresovi</title>
+  <link rel="stylesheet" href="zavrsni.css">
+  <link rel="stylesheet" href="proizvod.css">
+  <script src="proizvod.js" defer></script>
+  <script src="login.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">G</div>
+    <h1>GOAT dresovi</h1>
+  </div>
+
+  <nav id="nav-menu">
+    <a href="index.html">Početna stranica</a>
+    <a href="svi-proizvodi.html">Svi proizvodi</a>
+  </nav>
+
+  <div class="header-icons">
+    <a href="kosarica.html" class="icon">🛒</a>
+    <a href="login.html" id="login-link" class="icon">👤</a>
+  </div>
+</header>
+
+<section class="product-detail">
+  <img id="productImage" src="" alt="Dres">
+  <div class="product-info">
+    <h2 id="productName">Naziv dresa</h2>
+    <p id="productPrice"></p>
+
+    <label for="size">Odaberi veličinu:</label>
+    <select id="size">
+      <option value="">-- Odaberi --</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+
+    <button id="addBtn" disabled>Dodaj u košaricu</button>
+    <p style="font-size:14px; color:#555;"></p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; GOAT dresovi</p>
+</footer>
+</body>
+</html>

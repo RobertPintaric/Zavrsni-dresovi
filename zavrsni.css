@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #e6f4ff 0%, white 60%);
+  color: #0a3550;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 25px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #58b9ff, #9ed8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 10px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #0a3550;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background: #e6f4ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-icon {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 5px 8px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.user-icon:hover {
+  background: #e6f4ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* HERO */
+.hero {
+  margin-top: 120px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.intro h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.intro p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #124b6f;
+}
+
+.customer-greeting {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0a3550;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(90deg, #4fb3ff, #9ed8ff);
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.cta:hover {
+  opacity: 0.85;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  margin-top: 60px;
+  color: #08324a;
+  opacity: 0.9;
+}
+
+/* HAMBURGER */
+.hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
+  user-select: none;
+  color: #0a3550;
+}
+
+/* FAQ */
+.faq-answer {
+  display: none;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #08324a;
+  padding: 10px 15px;
+  border-left: 3px solid #4fb3ff;
+  background-color: #e6f4ff;
+  border-radius: 5px;
+}
+
+.faq-item {
+  cursor: pointer;
+  margin: 15px 0;
+  padding: 15px 20px;
+  background-color: #f5f9ff;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.faq-item:hover {
+  background-color: #e0f0ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 70%;
+    background: white;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+    padding: 12px;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .user-icon {
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+  }
+
+  .faq-item, .faq-answer {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+
+  .customer-greeting {
+    font-size: 18px;
+  }
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 20px;
+}
+
+.icon {
+  font-size: 22px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.icon:hover {
+  background: #e6f4ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.header-icons {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.header-icons a {
+  font-size: 22px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.2s;
+  color: #0a3550;
+  max-width: 140px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.header-icons a:hover {
+  background: #e6f4ff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
